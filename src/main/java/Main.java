@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         final String BASE_URL = "https://sis.jhu.edu/api/classes";
-        final String KEY = "YOUR_API_KEY_HERE";
+        final String KEY = System.getenv("SIS_API_KEY");
 
         String endpoint = BASE_URL + "/codes/schools?Key=" + KEY;
 
